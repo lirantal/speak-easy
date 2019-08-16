@@ -1,6 +1,8 @@
 <template>
   <div class="speakingTip">
-    <TwitterCard tweetId="123"></TwitterCard>
+    <TwitterCard
+      TweetURL="https://twitter.com/the_thagomizer/status/930910860846993410?ref_src=twsrc%5Etfw"
+    ></TwitterCard>
   </div>
 </template>
 

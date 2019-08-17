@@ -1,8 +1,6 @@
 <template>
   <div class="speakingTip">
-    <TwitterCard
-      TweetURL="https://twitter.com/the_thagomizer/status/930910860846993410?ref_src=twsrc%5Etfw"
-    ></TwitterCard>
+    <TwitterCard v-bind:tweet-url="tweet"></TwitterCard>
   </div>
 </template>
 
@@ -13,6 +11,12 @@ export default {
   name: "SpeakingTip",
   components: {
     TwitterCard
+  },
+  data: function() {
+    return {
+      tweet:
+        "https://twitter.com/the_thagomizer/status/930910860846993410?ref_src=twsrc%5Etfw"
+    };
   }
 };
 </script>

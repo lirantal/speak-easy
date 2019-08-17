@@ -3,7 +3,7 @@
     <blockquote class="twitter-tweet">
       <p>
         &lt; --- &gt; ... loading tip ... &lt; ---- &gt;
-        <a v-bind:href="TweetURL"></a>
+        <a v-bind:href="tweetUrl"></a>
       </p>
     </blockquote>
   </div>
@@ -13,7 +13,7 @@
 export default {
   name: "TwitterCard",
   props: {
-    TweetURL: String
+    tweetUrl: String
   }
 };
 </script>

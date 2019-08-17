@@ -5,13 +5,11 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import SpeakingTip from "./components/SpeakingTip";
 
 export default {
   name: "app",
   components: {
-    // HelloWorld
     SpeakingTip
   }
 };

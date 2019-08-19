@@ -19,7 +19,10 @@ export default {
     await twttr.ready();
     twttr.widgets
       .createTweet(this.tweetUrl, document.getElementById("tweetInstance"), {
-        theme: "light"
+        theme: "light",
+        align: "center",
+        width: "550px",
+        conversation: "none"
       })
       .catch(err => {
         console.error(err);

@@ -1,11 +1,6 @@
 <template>
-  <div class="card">
-    <blockquote class="twitter-tweet">
-      <p>
-        &lt; --- &gt; ... loading tip ... &lt; ---- &gt;
-        <a v-bind:href="tweetUrl"></a>
-      </p>
-    </blockquote>
+  <div id="twitterCard" class="card">
+    <div id="tweetInstance"></div>
   </div>
 </template>
 
@@ -14,6 +9,21 @@ export default {
   name: "TwitterCard",
   props: {
     tweetUrl: String
+  },
+  mounted: async function() {
+    const twttr = window.twttr;
+    if (!twttr) {
+      return;
+    }
+
+    await twttr.ready();
+    twttr.widgets
+      .createTweet(this.tweetUrl, document.getElementById("tweetInstance"), {
+        theme: "light"
+      })
+      .catch(err => {
+        console.error(err);
+      });
   }
 };
 </script>

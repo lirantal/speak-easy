@@ -1,28 +1,43 @@
 <template>
   <div class="speakingTip">
-    <TwitterCard v-bind:tweet-url="randomTweet"></TwitterCard>
+    <div>
+      <input type="button" value="Lucky Tip" v-on:click="setRandomTweet" />
+    </div>
+
+    <TwitterCard v-bind:tweet-url="tweetUrl" :key="tweetUrl"></TwitterCard>
   </div>
 </template>
 
 <script>
 import TwitterCard from "./TwitterCard.vue";
 
+const tweets = [
+  "930910860846993410",
+  "950453575817162752",
+  "771763270273294336",
+  "783943172057694208"
+];
+
 export default {
   name: "SpeakingTip",
   components: {
     TwitterCard
   },
-  computed: {
-    randomTweet: function() {
-      const tweets = [
-        "https://twitter.com/the_thagomizer/status/930910860846993410?ref_src=twsrc%5Etfw",
-        "https://twitter.com/devolore/status/950453575817162752?ref_src=twsrc%5Etfw"
-      ];
-
+  data: function() {
+    return {
+      tweetUrl: ""
+    };
+  },
+  mounted: function() {
+    this.setRandomTweet();
+  },
+  methods: {
+    setRandomTweet() {
       const totalTweets = tweets.length;
       const randomTweetIndex = Math.floor(Math.random() * totalTweets);
 
-      return tweets[randomTweetIndex];
+      console.log("random tweet function called");
+      this.tweetUrl = tweets[randomTweetIndex];
     }
   }
 };

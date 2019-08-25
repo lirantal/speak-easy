@@ -1,5 +1,5 @@
 <template>
-  <div id="twitterCard" class="card">
+  <div id="twitterCard">
     <div id="tweetInstance"></div>
   </div>
 </template>
@@ -21,7 +21,6 @@ export default {
       .createTweet(this.tweetUrl, document.getElementById("tweetInstance"), {
         theme: "light",
         align: "center",
-        width: "550px",
         conversation: "none"
       })
       .catch(err => {

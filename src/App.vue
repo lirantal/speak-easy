@@ -1,11 +1,21 @@
 <template>
   <div id="app">
-    <SpeakingTip />
+    <section class="hero is-dark">
+      <div class="hero-body">
+        <SpeakingTip />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
+import Vue from "vue";
+import Buefy from "buefy";
+import "buefy/dist/buefy.css";
+
 import SpeakingTip from "./components/SpeakingTip";
+
+Vue.use(Buefy);
 
 export default {
   name: "app",
@@ -14,14 +24,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

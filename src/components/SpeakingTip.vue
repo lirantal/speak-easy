@@ -1,10 +1,21 @@
 <template>
-  <div class="speakingTip">
-    <div>
-      <input type="button" value="Lucky Tip" v-on:click="setRandomTweet" />
+  <div>
+    <div class="columns is-desktop is-centered">
+      <div class="column is-half has-text-centered">
+        <input
+          class="button is-primary"
+          type="button"
+          value="Lucky Tip"
+          v-on:click="setRandomTweet"
+        />
+      </div>
     </div>
 
-    <TwitterCard v-bind:tweet-url="tweetUrl" :key="tweetUrl"></TwitterCard>
+    <div class="columns is-desktop is-centered">
+      <div class="column is-half has-text-centered">
+        <TwitterCard v-bind:tweet-url="tweetUrl" :key="tweetUrl"></TwitterCard>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -42,10 +53,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.speakingTip {
-  text-align: center;
-  display: inline-block;
-}
-</style>

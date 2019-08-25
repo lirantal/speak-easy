@@ -5,6 +5,17 @@
         <SpeakingTip />
       </div>
     </section>
+
+    <section>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Speak Easy</strong> by
+            <a href="https://twitter.com/liran_tal">Liran Tal</a>.
+          </p>
+        </div>
+      </footer>
+    </section>
   </div>
 </template>
 

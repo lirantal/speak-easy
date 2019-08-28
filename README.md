@@ -1,12 +1,16 @@
 <p align="center">
 	<br/>
   ✨ speak|easy ✨
+	<br/>
+   <a href="https://speak-easy.netlify.com">Inspirational & Informational Public Speaking Tips</a>
 </p>
+
+<br/>
 
 <p align="center">
   <img height="200" src="./speak-easy-tweet.png" />
   <br/>
-  <a href="https://speak-easy.netlify.com">Inspirational & Informational Public Speaking Tips</a>
+
 </p>
 
 <br/>

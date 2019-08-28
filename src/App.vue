@@ -23,7 +23,7 @@
         <div class="content has-text-centered">
           <p>
             <strong>speak|easy</strong> by
-            <a href="https://twitter.com/liran_tal">Liran Tal</a>.
+            <a href="https://twitter.com/liran_tal">Liran Tal</a>
           </p>
         </div>
       </footer>

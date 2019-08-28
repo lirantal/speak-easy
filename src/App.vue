@@ -7,6 +7,11 @@
 
       <div class="navbar-menu">
         <div class="navbar-end">
+          <a
+            class="navbar-item"
+            href="https://github.com/lirantal/speak-easy/blob/master/src/components/TweetsData.json"
+          >+ Add Tip</a>
+
           <span class="navbar-item">
             <a class="button is-primary is-inverted" href="https://github.com/lirantal/speak-easy">
               <span class="icon">

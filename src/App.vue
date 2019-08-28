@@ -4,6 +4,19 @@
       <div class="navbar-brand">
         <a class="navbar-item" href="#">speak|easy</a>
       </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <span class="navbar-item">
+            <a class="button is-primary is-inverted" href="https://github.com/lirantal/speak-easy">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>GitHub</span>
+            </a>
+          </span>
+        </div>
+      </div>
     </nav>
 
     <section class="hero is-dark">

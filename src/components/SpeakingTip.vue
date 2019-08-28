@@ -41,7 +41,6 @@ export default {
       const totalTweets = TweetsData.length;
       const randomTweetIndex = Math.floor(Math.random() * totalTweets);
 
-      console.log("random tweet function called");
       this.tweetUrl = TweetsData[randomTweetIndex];
     }
   }

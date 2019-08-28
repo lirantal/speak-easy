@@ -1,12 +1,20 @@
 <p align="center">
-	<br>
+	<br/>
   ✨ speak|easy ✨
-	<br>
+  <br/>
+  <br/>
+  <img height="200" src="./speak-easy-tweet.png" />
+  <br/>
+<a href="https://speak-easy.netlify.com">Inspirational & Informational Public Speaking Tips</a>
+<br>
+
 </p>
 
 # About
 
 The source-code for the `speak|easy` website which promotes inspirational and information public speaking tips.
+
+Website: https://speak-easy.netlify.com
 
 # Development
 

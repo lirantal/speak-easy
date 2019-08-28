@@ -21,35 +21,7 @@
 
 <script>
 import TwitterCard from "./TwitterCard.vue";
-
-const tweets = [
-  "930910860846993410",
-  "950453575817162752",
-  "975815746789003264",
-  "999413836691189761",
-  "702168652238426112",
-  "249293308134834177",
-  "1050864294680612864",
-  "247737519129632768",
-  "1054758802199900162",
-  "911573895328813056",
-  "633296470129688576",
-  "734438997926240256",
-  "132463359932104704",
-  "1163512113484226560",
-  "1161925632621719552",
-  "1019199012908552192",
-  "930926809432182785",
-  "496574322325340160",
-  "315188177977614336",
-  "41548625972703233",
-  "966767114475499520",
-  "1141299695626702848",
-  "974682957297274880",
-  "397048511214395392",
-  "1048597738835861505",
-  "960644243483185155"
-];
+import TweetsData from "./TweetsData.json";
 
 export default {
   name: "SpeakingTip",
@@ -66,11 +38,11 @@ export default {
   },
   methods: {
     setRandomTweet() {
-      const totalTweets = tweets.length;
+      const totalTweets = TweetsData.length;
       const randomTweetIndex = Math.floor(Math.random() * totalTweets);
 
       console.log("random tweet function called");
-      this.tweetUrl = tweets[randomTweetIndex];
+      this.tweetUrl = TweetsData[randomTweetIndex];
     }
   }
 };

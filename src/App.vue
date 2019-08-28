@@ -36,6 +36,10 @@
           <p>
             <strong>speak|easy</strong> by
             <a href="https://twitter.com/liran_tal">Liran Tal</a>
+            ✨deployed with
+            <a href="https://www.netlify.com">netlify</a>
+            ✨secured by
+            <a href="https://www.snyk.io">snyk</a>
           </p>
         </div>
       </footer>

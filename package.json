@@ -21,6 +21,11 @@
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
   },
+  "author": {
+    "name": "Liran Tal",
+    "email": "liran.tal@gmail.com"
+  },
+  "license": "Apache-2.0",
   "eslintConfig": {
     "root": true,
     "env": {

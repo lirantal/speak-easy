@@ -1,5 +1,6 @@
 <template>
   <div id="twitterCard">
+    <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="true"></b-loading>
     <div id="tweetInstance"></div>
   </div>
 </template>
@@ -9,6 +10,11 @@ export default {
   name: "TwitterCard",
   props: {
     tweetUrl: String
+  },
+  data() {
+    return {
+      isLoading: true
+    };
   },
   mounted: async function() {
     await appendScriptToHead();
@@ -21,6 +27,10 @@ export default {
         theme: "light",
         align: "center",
         conversation: "none"
+      })
+      .then(() => {
+        // eslint-disable-next-line no-console
+        this.isLoading = false;
       })
       .catch(err => {
         // eslint-disable-next-line no-console

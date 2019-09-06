@@ -2,10 +2,11 @@
   <div>
     <div class="columns is-desktop is-centered">
       <div class="column is-half has-text-centered">
+        <div style="margin-bottom: 10px">Inspirational & Informational Public Speaking Tips</div>
         <input
           class="button is-primary"
           type="button"
-          value="Lucky Tip"
+          value="Feeling Lucky?"
           v-on:click="setRandomTweet"
         />
       </div>

@@ -1832,10 +1832,10 @@ browserslist@^4.0.0, browserslist@^4.3.4, browserslist@^4.5.4, browserslist@^4.6
     electron-to-chromium "^1.3.191"
     node-releases "^1.1.25"
 
-buefy@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/buefy/-/buefy-1.0.0.tgz#4af77212bdff784d7dc15d52adca1c3e0b533bc2"
-  integrity sha1-SvdyEr3/eE19wV1SrcocPgtTO8I=
+buefy@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/buefy/-/buefy-1.0.1.tgz#0c7516b5c5f15569fe643a2133ee650d9bfdd0a2"
+  integrity sha512-ryF2Lb4hyw7zOCBpGOvHRjfIIgtZpCz7bO1IBx5azqex9ZwQBYz0zYt9ZBAQ2ycGWeFIjDi5jhF1gE+v25Xw9w==
 
 buffer-from@^1.0.0:
   version "1.1.1"
